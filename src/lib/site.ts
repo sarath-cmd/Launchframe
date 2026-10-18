@@ -12,10 +12,10 @@ export const site = {
   url: rawUrl.replace(/\/+$/, ""),
   contact: {
     email: process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim() || undefined,
-    phone: process.env.NEXT_PUBLIC_CONTACT_PHONE?.trim() || undefined,
+    phone: process.env.NEXT_CONTACT_PHONE?.trim() || undefined,
     location: process.env.NEXT_PUBLIC_CONTACT_LOCATION?.trim() || undefined,
     /** Digits only, international format, no "+" (e.g. 919876543210). */
-    whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.trim() || undefined,
+    whatsapp: process.env.NEXT_WHATSAPP_NUMBER?.trim() || undefined,
   },
   /** Landing page pricing line. Placeholders show until real values are set. */
   pricing: {
