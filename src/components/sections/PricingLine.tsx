@@ -26,7 +26,10 @@ export function PricingLine() {
             ))}
           </ul>
 
-          <CtaButtons className="mt-8 justify-center" />
+          <CtaButtons
+            className="mt-8 justify-center"
+            message={`Hi! I'd like to talk about a website around ${site.pricing.startingPrice}.`}
+          />
         </Reveal>
       </Container>
     </section>
